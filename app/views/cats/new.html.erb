@@ -1,10 +1,16 @@
 <form action ="<%=cats_url%>" method='post'>
+
   <label>
-    Namerooni:
-    <input type="text" name="cats[name]" value = "">
+    Name:
+    <input type="text" name="cats[name]" value = "<%= cat.name %>">
   </label>
     <br>
     <br>
+    <label>
+      Birthday:
+      <input type="date" name="cats[birth_date]" value = "<%= cat.birth_date %>"><br>
+      <br>
+    </label>
   <label>
     Please Select the Gender:
     <br>
@@ -32,6 +38,7 @@
     <br>
     Describe Yourself to the Feline Community:
     <br>
-    <textarea name="cats[description]" rows="30" cols="50"></textarea>
-
+  <textarea name="cats[description]" rows="20" cols="50"></textarea>
+  <br>
+  <input type="submit" value="Shake it Dont Break it">
 </form>

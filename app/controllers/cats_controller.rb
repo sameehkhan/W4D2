@@ -12,7 +12,8 @@ class CatsController < ApplicationController
   end
 
   def create
-
+    cat = Cat.new
+    redirect_to cat_url(cat)
   end
 
   def user_params
