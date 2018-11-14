@@ -1,0 +1,37 @@
+<form action ="<%=cats_url%>" method='post'>
+  <label>
+    Namerooni:
+    <input type="text" name="cats[name]" value = "">
+  </label>
+    <br>
+    <br>
+  <label>
+    Please Select the Gender:
+    <br>
+    <input type="radio" name="cats[sex]" value="M"> Male<br>
+    <input type="radio" name="cats[sex]" value="F"> Female<br>
+  </label>
+    <br>
+  <label>
+    Please Select the Color your Cat Identifies with:
+    <br>
+    <select name="cats[color]">
+      <option value="blank">--select a color--</option>
+      <option value="red">Red</option>
+      <option value="white">White</option>
+      <option value="black">Black</option>
+      <option value="blue">Blue</option>
+      <option value="orange">Orange</option>
+      <option value="green">Green</option>
+      <option value="yellow">Yellow</option>
+      <option value="purple">Purple</option>
+    </select>
+  </label>
+  <br>
+  <label>
+    <br>
+    Describe Yourself to the Feline Community:
+    <br>
+    <textarea name="cats[description]" rows="30" cols="50"></textarea>
+
+</form>
